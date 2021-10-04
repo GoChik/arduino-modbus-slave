@@ -5,7 +5,7 @@ set(ARDUINO_BOARD_OPTIONS_FILE BoardOptions.cmake)
 
 project(modbus-slave CXX)
 
-add_executable(modbus_slave main.cpp)
+add_executable(modbus_slave modbus-slave.cpp)
 include_directories(./)
 
 # Arduino.h is included in hello_world.cpp, so link with Arduino core

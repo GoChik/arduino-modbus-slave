@@ -21,4 +21,6 @@ namespace {
     const int INPUTS[INPUTS_SIZE] {
         5,
     };
+
+    const int OUTPUT_INVERTED = 1;
 }
