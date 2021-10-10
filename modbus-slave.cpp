@@ -68,7 +68,7 @@ void loop() {
     uint16_t input_registers = 0x0000;
     for (auto i : INPUTS) {
         const uint8_t value = digitalRead(i);
-        input_registers = input_registers & (value << i);
+        input_registers = input_registers | (value << i);
     }
 
     server.holdingRegisterWrite(0x01, input_registers);
